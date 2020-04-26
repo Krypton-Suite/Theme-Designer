@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp5.0</TargetFramework>
-    <RootNamespace>Theme_Designer</RootNamespace>
+    <TargetFrameworks>net48;netcoreapp3.1</TargetFrameworks>
+    <RootNamespace>ThemeDesigner</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
