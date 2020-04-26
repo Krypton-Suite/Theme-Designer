@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <RootNamespace>Theme_Designer</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Krypton.Navigator.Canary" Version="5.500.2006" />
+    <PackageReference Include="Krypton.Ribbon.Canary" Version="5.500.2006" />
+    <PackageReference Include="Krypton.Toolkit.Canary" Version="5.500.2006" />
+  </ItemGroup>
+
+</Project>
