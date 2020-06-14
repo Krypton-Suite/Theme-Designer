@@ -13,15 +13,15 @@ namespace ThemeDesigner.UX
         private System.Windows.Forms.StatusStrip statusStrip1;
         private Krypton.Ribbon.KryptonRibbon kryptonRibbon1;
         private KryptonPanel kryptonPanel2;
-        private Krypton.Navigator.KryptonNavigator kryptonNavigator1;
-        private Krypton.Navigator.KryptonPage kryptonPage1;
         private Krypton.Ribbon.KryptonRibbonQATButton kryptonRibbonQATButton1;
         private Krypton.Ribbon.KryptonRibbonQATButton kryptonRibbonQATButton2;
         private Krypton.Ribbon.KryptonRibbonQATButton kryptonRibbonQATButton3;
         private Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab1;
         private Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab2;
-        private Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab3;
+        private Krypton.Navigator.KryptonNavigator kryptonNavigator1;
+        private Krypton.Navigator.KryptonPage kryptonPage1;
         private Krypton.Navigator.KryptonPage kryptonPage2;
+        private Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab3;
 
         private void InitializeComponent()
         {
@@ -29,16 +29,16 @@ namespace ThemeDesigner.UX
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.kryptonRibbon1 = new Krypton.Ribbon.KryptonRibbon();
-            this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
-            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
-            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
             this.kryptonRibbonQATButton1 = new Krypton.Ribbon.KryptonRibbonQATButton();
             this.kryptonRibbonQATButton2 = new Krypton.Ribbon.KryptonRibbonQATButton();
             this.kryptonRibbonQATButton3 = new Krypton.Ribbon.KryptonRibbonQATButton();
             this.kryptonRibbonTab1 = new Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonRibbonTab2 = new Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonRibbonTab3 = new Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
+            this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
+            this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).BeginInit();
@@ -81,6 +81,7 @@ namespace ThemeDesigner.UX
             this.kryptonRibbonTab1,
             this.kryptonRibbonTab2,
             this.kryptonRibbonTab3});
+            this.kryptonRibbon1.SelectedContext = null;
             this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab1;
             this.kryptonRibbon1.Size = new System.Drawing.Size(1373, 115);
             this.kryptonRibbon1.TabIndex = 1;
@@ -104,7 +105,7 @@ namespace ThemeDesigner.UX
             this.kryptonPage2});
             this.kryptonNavigator1.SelectedIndex = 0;
             this.kryptonNavigator1.Size = new System.Drawing.Size(1373, 596);
-            this.kryptonNavigator1.TabIndex = 0;
+            this.kryptonNavigator1.TabIndex = 3;
             this.kryptonNavigator1.Text = "kryptonNavigator1";
             // 
             // kryptonPage1
@@ -117,7 +118,7 @@ namespace ThemeDesigner.UX
             this.kryptonPage1.Size = new System.Drawing.Size(1371, 569);
             this.kryptonPage1.Text = "kryptonPage1";
             this.kryptonPage1.ToolTipTitle = "Page ToolTip";
-            this.kryptonPage1.UniqueName = "b704d77139e342b9972be8b0aed3f4b6";
+            this.kryptonPage1.UniqueName = "e03cf3dd910e49a5843d8a82e52b3394";
             // 
             // kryptonPage2
             // 
@@ -129,7 +130,7 @@ namespace ThemeDesigner.UX
             this.kryptonPage2.Size = new System.Drawing.Size(100, 100);
             this.kryptonPage2.Text = "kryptonPage2";
             this.kryptonPage2.ToolTipTitle = "Page ToolTip";
-            this.kryptonPage2.UniqueName = "fad7afb5d8db4799b205a71450fb1be6";
+            this.kryptonPage2.UniqueName = "a3b8015ce5774af59191095cf641f0fd";
             // 
             // MainWindow
             // 
