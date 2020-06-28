@@ -97,6 +97,7 @@ namespace ThemeDesigner.UX
             // 
             // kryptonNavigator1
             // 
+            this.kryptonNavigator1.Button.CloseButtonDisplay = Krypton.Navigator.ButtonDisplay.Hide;
             this.kryptonNavigator1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonNavigator1.Location = new System.Drawing.Point(0, 0);
             this.kryptonNavigator1.Name = "kryptonNavigator1";
@@ -105,7 +106,7 @@ namespace ThemeDesigner.UX
             this.kryptonPage2});
             this.kryptonNavigator1.SelectedIndex = 0;
             this.kryptonNavigator1.Size = new System.Drawing.Size(1373, 596);
-            this.kryptonNavigator1.TabIndex = 3;
+            this.kryptonNavigator1.TabIndex = 0;
             this.kryptonNavigator1.Text = "kryptonNavigator1";
             // 
             // kryptonPage1
@@ -118,7 +119,7 @@ namespace ThemeDesigner.UX
             this.kryptonPage1.Size = new System.Drawing.Size(1371, 569);
             this.kryptonPage1.Text = "kryptonPage1";
             this.kryptonPage1.ToolTipTitle = "Page ToolTip";
-            this.kryptonPage1.UniqueName = "e03cf3dd910e49a5843d8a82e52b3394";
+            this.kryptonPage1.UniqueName = "7f5a8dda66c24a1d914bce139e43d9f0";
             // 
             // kryptonPage2
             // 
@@ -130,7 +131,7 @@ namespace ThemeDesigner.UX
             this.kryptonPage2.Size = new System.Drawing.Size(100, 100);
             this.kryptonPage2.Text = "kryptonPage2";
             this.kryptonPage2.ToolTipTitle = "Page ToolTip";
-            this.kryptonPage2.UniqueName = "a3b8015ce5774af59191095cf641f0fd";
+            this.kryptonPage2.UniqueName = "8072fbe739e3448c8b5a59acde911744";
             // 
             // MainWindow
             // 

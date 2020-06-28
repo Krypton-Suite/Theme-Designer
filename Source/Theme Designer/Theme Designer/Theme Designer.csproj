@@ -9,10 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Krypton.Navigator.Canary" Version="5.500.2006" />
-    <PackageReference Include="Krypton.Ribbon.Canary" Version="5.500.2006" />
-    <PackageReference Include="Krypton.Toolkit.Canary" Version="5.500.2006" />
-    <PackageReference Include="Krypton.Workspace.Canary" Version="5.500.2006" />
+    <PackageReference Include="Krypton.Navigator.Canary" Version="6.0.2006.1" />
+    <PackageReference Include="Krypton.Ribbon.Canary" Version="6.0.2006.1" />
+    <PackageReference Include="Krypton.Toolkit.Canary" Version="6.0.2006.1" />
+    <PackageReference Include="Krypton.Toolkit.Suite.Extended.Base" Version="5.550.2006.2" />
+    <PackageReference Include="Krypton.Workspace.Canary" Version="6.0.2006.1" />
   </ItemGroup>
 
   <ItemGroup>
