@@ -1,9 +1,5 @@
 ﻿using Krypton.Toolkit;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ThemeDesigner.UX
 {
@@ -344,11 +340,11 @@ namespace ThemeDesigner.UX
         #endregion
 
         #region Variables
-        private KryptonPalette _palette = null;
+        private static KryptonPalette _palette = null;
         #endregion
 
         #region Properties
-        public KryptonPalette Palette { get => _palette; set => _palette = value; }
+        public static KryptonPalette Palette { get => _palette; set => _palette = value; }
         #endregion
 
         #region Constructor
