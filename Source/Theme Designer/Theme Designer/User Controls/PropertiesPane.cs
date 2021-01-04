@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace ThemeDesigner
 {
     public class PropertiesPane : UserControl
     {
-        private Krypton.Toolkit.Extended.Base.KryptonPropertyGrid kpgPaletteProperties;
+        private Krypton.Toolkit.Suite.Extended.Base.KryptonPropertyGrid kpgPaletteProperties;
 
         private void InitializeComponent()
         {
-            this.kpgPaletteProperties = new Krypton.Toolkit.Extended.Base.KryptonPropertyGrid();
+            this.kpgPaletteProperties = new Krypton.Toolkit.Suite.Extended.Base.KryptonPropertyGrid();
             this.SuspendLayout();
             // 
             // kpgPaletteProperties

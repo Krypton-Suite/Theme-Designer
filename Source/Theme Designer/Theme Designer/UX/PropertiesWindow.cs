@@ -1,16 +1,16 @@
 ﻿using Krypton.Toolkit;
-using Krypton.Toolkit.Extended.Base;
+using Krypton.Toolkit.Suite.Extended.Base;
 
 namespace ThemeDesigner
 {
     public class PropertiesWindow : KryptonForm
     {
         #region Design Code
-        private Krypton.Toolkit.Extended.Base.KryptonPropertyGrid kpg;
+        private Krypton.Toolkit.Suite.Extended.Base.KryptonPropertyGrid kpg;
 
         private void InitializeComponent()
         {
-            this.kpg = new Krypton.Toolkit.Extended.Base.KryptonPropertyGrid();
+            this.kpg = new Krypton.Toolkit.Suite.Extended.Base.KryptonPropertyGrid();
             this.SuspendLayout();
             // 
             // kpg

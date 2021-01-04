@@ -33,6 +33,22 @@ namespace ThemeDesigner.UX
         private Krypton.Ribbon.KryptonRibbonGroupButton krgbCopy;
         private Krypton.Ribbon.KryptonRibbonGroupButton krgbPaste;
         private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup3;
+        private Krypton.Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator1;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
+        private Krypton.Ribbon.KryptonRibbonGroupButton krgbUndo;
+        private Krypton.Ribbon.KryptonRibbonGroupButton krgbRedo;
+        private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines1;
+        private Krypton.Ribbon.KryptonRibbonGroupLabel kryptonRibbonGroupLabel1;
+        private Krypton.Ribbon.KryptonRibbonGroupComboBox kryptonRibbonGroupComboBox1;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup4;
+        private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLines2;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton1;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton2;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup5;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton3;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton4;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton5;
         private Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab3;
 
         private void InitializeComponent()
@@ -53,15 +69,31 @@ namespace ThemeDesigner.UX
             this.kryptonRibbonGroup2 = new Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple2 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.krgbCut = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.krgbCopy = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.krgbPaste = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup3 = new Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonTab2 = new Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonRibbonTab3 = new Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
             this.kryptonPage1 = new Krypton.Navigator.KryptonPage();
             this.kryptonPage2 = new Krypton.Navigator.KryptonPage();
-            this.krgbCopy = new Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.krgbPaste = new Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroup3 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupSeparator1 = new Krypton.Ribbon.KryptonRibbonGroupSeparator();
+            this.kryptonRibbonGroupTriple3 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.krgbUndo = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.krgbRedo = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupLines1 = new Krypton.Ribbon.KryptonRibbonGroupLines();
+            this.kryptonRibbonGroupLabel1 = new Krypton.Ribbon.KryptonRibbonGroupLabel();
+            this.kryptonRibbonGroupComboBox1 = new Krypton.Ribbon.KryptonRibbonGroupComboBox();
+            this.kryptonRibbonGroup4 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupLines2 = new Krypton.Ribbon.KryptonRibbonGroupLines();
+            this.kryptonRibbonGroupButton1 = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupButton2 = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup5 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple4 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton3 = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupButton4 = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupButton5 = new Krypton.Ribbon.KryptonRibbonGroupButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).BeginInit();
@@ -104,7 +136,8 @@ namespace ThemeDesigner.UX
             this.krtHome,
             this.kryptonRibbonTab2,
             this.kryptonRibbonTab3});
-            this.kryptonRibbon1.SelectedTab = this.krtHome;
+            this.kryptonRibbon1.SelectedContext = null;
+            this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab2;
             this.kryptonRibbon1.Size = new System.Drawing.Size(1373, 115);
             this.kryptonRibbon1.TabIndex = 1;
             // 
@@ -113,7 +146,8 @@ namespace ThemeDesigner.UX
             this.krtHome.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
             this.kryptonRibbonGroup1,
             this.kryptonRibbonGroup2,
-            this.kryptonRibbonGroup3});
+            this.kryptonRibbonGroup3,
+            this.kryptonRibbonGroup4});
             this.krtHome.Text = "Home";
             // 
             // kryptonRibbonGroup1
@@ -130,21 +164,25 @@ namespace ThemeDesigner.UX
             // 
             // krgbNew
             // 
-            this.krgbNew.ImageLarge = global::ThemeDesigner.Properties.Resources.document_new;
+            this.krgbNew.ImageLarge = global::ThemeDesigner.Properties.Resources.New_File_32_x_32;
             this.krgbNew.TextLine1 = "New";
             // 
             // kgbtnSave
             // 
+            this.kgbtnSave.ImageLarge = global::ThemeDesigner.Properties.Resources.Hard_Drive_v1_32_x_32;
             this.kgbtnSave.TextLine1 = "Save";
             // 
             // krgbtnOpen
             // 
+            this.krgbtnOpen.ImageLarge = global::ThemeDesigner.Properties.Resources.Open_File_32_x_32;
             this.krgbtnOpen.TextLine1 = "Open";
             // 
             // kryptonRibbonGroup2
             // 
             this.kryptonRibbonGroup2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
-            this.kryptonRibbonGroupTriple2});
+            this.kryptonRibbonGroupTriple2,
+            this.kryptonRibbonGroupSeparator1,
+            this.kryptonRibbonGroupTriple3});
             // 
             // kryptonRibbonGroupTriple2
             // 
@@ -155,8 +193,29 @@ namespace ThemeDesigner.UX
             // 
             // krgbCut
             // 
+            this.krgbCut.ImageLarge = global::ThemeDesigner.Properties.Resources.Cut_32_x_32;
             this.krgbCut.TextLine1 = "Cut";
             this.krgbCut.Click += new System.EventHandler(this.krgbPaletteProperties_Click);
+            // 
+            // krgbCopy
+            // 
+            this.krgbCopy.ImageLarge = global::ThemeDesigner.Properties.Resources.Copy_32_x_32;
+            this.krgbCopy.TextLine1 = "Copy";
+            // 
+            // krgbPaste
+            // 
+            this.krgbPaste.ImageLarge = global::ThemeDesigner.Properties.Resources.Paste_32_x_32;
+            this.krgbPaste.TextLine1 = "Paste";
+            // 
+            // kryptonRibbonGroup3
+            // 
+            this.kryptonRibbonGroup3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupLines1});
+            // 
+            // kryptonRibbonTab2
+            // 
+            this.kryptonRibbonTab2.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup5});
             // 
             // kryptonPanel2
             // 
@@ -205,13 +264,58 @@ namespace ThemeDesigner.UX
             this.kryptonPage2.ToolTipTitle = "Page ToolTip";
             this.kryptonPage2.UniqueName = "8072fbe739e3448c8b5a59acde911744";
             // 
-            // krgbCopy
+            // kryptonRibbonGroupTriple3
             // 
-            this.krgbCopy.TextLine1 = "Copy";
+            this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.krgbUndo,
+            this.krgbRedo});
             // 
-            // krgbPaste
+            // krgbUndo
             // 
-            this.krgbPaste.TextLine1 = "Paste";
+            this.krgbUndo.Enabled = false;
+            this.krgbUndo.ImageLarge = global::ThemeDesigner.Properties.Resources.Paste_16_x_16;
+            this.krgbUndo.TextLine1 = "Undo";
+            // 
+            // krgbRedo
+            // 
+            this.krgbRedo.Enabled = false;
+            this.krgbRedo.TextLine1 = "Redo";
+            // 
+            // kryptonRibbonGroupLines1
+            // 
+            this.kryptonRibbonGroupLines1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupLabel1,
+            this.kryptonRibbonGroupComboBox1});
+            // 
+            // kryptonRibbonGroupComboBox1
+            // 
+            this.kryptonRibbonGroupComboBox1.DropDownWidth = 121;
+            this.kryptonRibbonGroupComboBox1.FormattingEnabled = false;
+            this.kryptonRibbonGroupComboBox1.ItemHeight = 15;
+            this.kryptonRibbonGroupComboBox1.Text = "";
+            // 
+            // kryptonRibbonGroup4
+            // 
+            this.kryptonRibbonGroup4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupLines2});
+            // 
+            // kryptonRibbonGroupLines2
+            // 
+            this.kryptonRibbonGroupLines2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton1,
+            this.kryptonRibbonGroupButton2});
+            // 
+            // kryptonRibbonGroup5
+            // 
+            this.kryptonRibbonGroup5.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple4});
+            // 
+            // kryptonRibbonGroupTriple4
+            // 
+            this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton3,
+            this.kryptonRibbonGroupButton4,
+            this.kryptonRibbonGroupButton5});
             // 
             // MainWindow
             // 

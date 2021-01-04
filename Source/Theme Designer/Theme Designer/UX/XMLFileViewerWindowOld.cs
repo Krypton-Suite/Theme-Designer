@@ -1,9 +1,4 @@
 ﻿using Krypton.Toolkit;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ThemeDesigner
 {
@@ -446,7 +441,7 @@ namespace ThemeDesigner
         }
         #endregion
 
-        private void ksZoomLevelSlider_ValueChanged(Krypton.Toolkit.Extended.Common.KryptonToolbarSlider sender, Krypton.Toolkit.Extended.Common.KryptonToolbarSlider.SliderEventArgs eventArgs)
+        private void ksZoomLevelSlider_ValueChanged(Krypton.Toolkit.Suite.Extended.Common.KryptonToolbarSlider sender, Krypton.Toolkit.Suite.Extended.Common.KryptonToolbarSlider.SliderEventArgs eventArgs)
         {
             seEdit.Zoom = ksZoomLevelSlider.Value;
 
