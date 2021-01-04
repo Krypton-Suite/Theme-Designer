@@ -11,15 +11,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UX\XMLFileViewerWindowOld.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="UX\XMLFileViewerWindowOld.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoCompleteMenu-ScintillaNET" Version="1.6.2" />
     <PackageReference Include="EasyScintilla" Version="1.0.5" />
     <PackageReference Include="jacobslusser.ScintillaNET" Version="3.6.3" />
-    <PackageReference Include="Krypton.Navigator.Canary" Version="6.0.2101" />
-    <PackageReference Include="Krypton.Ribbon.Canary" Version="6.0.2101" />
-    <PackageReference Include="Krypton.Toolkit.Canary" Version="6.0.2101" />
+    <PackageReference Include="Krypton.Navigator" Version="5.550.2101" />
+    <PackageReference Include="Krypton.Ribbon" Version="5.550.2101" />
+    <PackageReference Include="Krypton.Toolkit" Version="5.550.2101" />
     <PackageReference Include="Krypton.Toolkit.Suite.Extended.Base" Version="5.550.2101" />
     <PackageReference Include="Krypton.Toolkit.Suite.Extended.Tool.Strip.Items" Version="5.550.2101" />
-    <PackageReference Include="Krypton.Workspace.Canary" Version="6.0.2101" />
+    <PackageReference Include="Krypton.Workspace" Version="5.550.2101" />
     <PackageReference Include="ScintillaNET_FindReplaceDialog" Version="1.0.3.3" />
   </ItemGroup>
 
