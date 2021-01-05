@@ -4,6 +4,7 @@ using Krypton.Toolkit;
 using Krypton.Toolkit.Suite.Extended.Core;
 using Krypton.Toolkit.Suite.Extended.Settings;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Reflection;
@@ -1373,6 +1374,75 @@ namespace ThemeDesigner.Classes
         public static void UpdateColour(PictureBox colourPreview, int alpha, int red, int green, int blue)
         {
             colourPreview.BackColor = Color.FromArgb(alpha, red, green, blue);
+        }
+
+        public static ArrayList PropagateColourSettingsArray()
+        {
+            ArrayList colourSettingsArray = new ArrayList();
+
+            AllMergedColourSettingsManager colourSettingsManager = new AllMergedColourSettingsManager();
+
+            colourSettingsArray.Add($"Base Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetBaseColour()) }");
+
+            colourSettingsArray.Add($"Dark Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetDarkColour()) }");
+
+            colourSettingsArray.Add($"Middle Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetMediumColour()) }");
+
+            colourSettingsArray.Add($"Light Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetLightColour()) }");
+
+            colourSettingsArray.Add($"Lightest Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetLightestColour()) }");
+
+            colourSettingsArray.Add($"Border Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetBorderColour()) }");
+
+            colourSettingsArray.Add($"Disabled Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetDisabledControlColour()) }");
+
+            colourSettingsArray.Add($"Alternative Normal Text Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetAlternativeNormalTextColour()) }");
+
+            colourSettingsArray.Add($"Disabled Text Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetDisabledTextColour()) }");
+
+            colourSettingsArray.Add($"Normal Text Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetNormalTextColour()) }");
+
+            colourSettingsArray.Add($"Focused Text Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetFocusedTextColour()) }");
+
+            colourSettingsArray.Add($"Pressed Text Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetPressedTextColour()) }");
+
+            colourSettingsArray.Add($"Link Disabled Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetLinkDisabledColour()) }");
+
+            colourSettingsArray.Add($"Link Normal Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetLinkNormalColour()) }");
+
+            colourSettingsArray.Add($"Link Hover Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetLinkHoverColour()) }");
+
+            colourSettingsArray.Add($"Link Visited Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetLinkVisitedColour()) }");
+
+            colourSettingsArray.Add($"Custom Colour One: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomColourOne()) }");
+
+            colourSettingsArray.Add($"Custom Colour Two: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomColourTwo()) }");
+
+            colourSettingsArray.Add($"Custom Colour Three: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomColourThree()) }");
+
+            colourSettingsArray.Add($"Custom Colour Four: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomColourFour()) }");
+
+            colourSettingsArray.Add($"Custom Colour Five: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomColourFive()) }");
+
+            colourSettingsArray.Add($"Custom Colour Six: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomColourSix()) }");
+
+            colourSettingsArray.Add($"Custom Text Colour One: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomTextColourOne()) }");
+
+            colourSettingsArray.Add($"Custom Text Colour Two: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomTextColourTwo()) }");
+
+            colourSettingsArray.Add($"Custom Text Colour Three: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomTextColourThree()) }");
+
+            colourSettingsArray.Add($"Custom Text Colour Four: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomTextColourFour()) }");
+
+            colourSettingsArray.Add($"Custom Text Colour Five: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomTextColourFive()) }");
+
+            colourSettingsArray.Add($"Custom Text Colour Six: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetCustomTextColourSix()) }");
+
+            colourSettingsArray.Add($"Menu Text Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetMenuTextColour()) }");
+
+            colourSettingsArray.Add($"Status Text Colour: { ColourUtilities.FormatColourRGBString(colourSettingsManager.GetStatusStripTextColour()) }");
+
+            return colourSettingsArray;
         }
         #endregion
     }
