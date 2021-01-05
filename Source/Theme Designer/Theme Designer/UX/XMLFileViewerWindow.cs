@@ -55,6 +55,8 @@ namespace ThemeDesigner.UX
         private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem clearClipboardToolStripMenuItem;
+        private Krypton.Toolkit.Suite.Extended.Tool.Strip.Items.KryptonSlider kryptonSlider1;
+        private System.Windows.Forms.ToolStripStatusLabel tslZoomLevel;
         private KryptonPanel kryptonPanel1;
 
         private void InitializeComponent()
@@ -108,6 +110,8 @@ namespace ThemeDesigner.UX
             this.selectAllToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.clearClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kryptonSlider1 = new Krypton.Toolkit.Suite.Extended.Tool.Strip.Items.KryptonSlider();
+            this.tslZoomLevel = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.ms.SuspendLayout();
@@ -165,7 +169,7 @@ namespace ThemeDesigner.UX
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
@@ -174,13 +178,13 @@ namespace ThemeDesigner.UX
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -188,19 +192,19 @@ namespace ThemeDesigner.UX
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -208,7 +212,7 @@ namespace ThemeDesigner.UX
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // printPreviewToolStripMenuItem
@@ -216,18 +220,18 @@ namespace ThemeDesigner.UX
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -377,19 +381,23 @@ namespace ThemeDesigner.UX
             // 
             this.ss.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ss.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tslExampleText});
-            this.ss.Location = new System.Drawing.Point(0, 2);
+            this.tslExampleText,
+            this.kryptonSlider1,
+            this.tslZoomLevel});
+            this.ss.Location = new System.Drawing.Point(0, 1);
             this.ss.Name = "ss";
             this.ss.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.ss.Size = new System.Drawing.Size(864, 22);
+            this.ss.Size = new System.Drawing.Size(864, 23);
             this.ss.TabIndex = 1;
             this.ss.Text = "statusStrip1";
             // 
             // tslExampleText
             // 
             this.tslExampleText.Name = "tslExampleText";
-            this.tslExampleText.Size = new System.Drawing.Size(76, 17);
+            this.tslExampleText.Size = new System.Drawing.Size(678, 18);
+            this.tslExampleText.Spring = true;
             this.tslExampleText.Text = "Example Text";
+            this.tslExampleText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // kryptonPanel3
             // 
@@ -484,6 +492,22 @@ namespace ThemeDesigner.UX
             this.clearClipboardToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.clearClipboardToolStripMenuItem.Text = "Clear Clip&board";
             // 
+            // kryptonSlider1
+            // 
+            this.kryptonSlider1.BackColor = System.Drawing.Color.Transparent;
+            this.kryptonSlider1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonSlider1.Name = "kryptonSlider1";
+            this.kryptonSlider1.Size = new System.Drawing.Size(140, 21);
+            this.kryptonSlider1.Steps = 2;
+            this.kryptonSlider1.Text = "kryptonSlider1";
+            this.kryptonSlider1.TrackerSize = new System.Drawing.Size(140, 21);
+            // 
+            // tslZoomLevel
+            // 
+            this.tslZoomLevel.Name = "tslZoomLevel";
+            this.tslZoomLevel.Size = new System.Drawing.Size(31, 18);
+            this.tslZoomLevel.Text = "{0}%";
+            // 
             // XMLFileViewerWindow
             // 
             this.ClientSize = new System.Drawing.Size(864, 675);
@@ -491,6 +515,7 @@ namespace ThemeDesigner.UX
             this.Controls.Add(this.kryptonPanel2);
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "XMLFileViewerWindow";
+            this.Load += new System.EventHandler(this.XMLFileViewerWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
@@ -539,5 +564,10 @@ namespace ThemeDesigner.UX
             }
         }
         #endregion
+
+        private void XMLFileViewerWindow_Load(object sender, EventArgs e)
+        {
+            tslZoomLevel.Text = $"{ seEdit.Zoom }%";
+        }
     }
 }

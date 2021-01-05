@@ -19,7 +19,7 @@ namespace ThemeDesigner.Classes
         /// <param name="paletteMode">The palette mode.</param>
         /// <param name="baseColour">The base colour.</param>
         /// <param name="darkColour">The dark colour.</param>
-        /// <param name="middleColour">The middle colour.</param>
+        /// <param name="mediumColour">The middle colour.</param>
         /// <param name="lightColour">The light colour.</param>
         /// <param name="lightestColour">The lightest colour.</param>
         /// <param name="borderColourPreview">The border colour preview.</param>
@@ -46,7 +46,7 @@ namespace ThemeDesigner.Classes
         /// <param name="statusTextColour">The status text colour.</param>
         /// <param name="statusState">State of the status.</param>
         /// <param name="invertColours">if set to <c>true</c> [invert colours].</param>
-        public static void ExportPaletteTheme(KryptonPalette palette, PaletteMode paletteMode, PictureBox baseColour, PictureBox darkColour, PictureBox middleColour, PictureBox lightColour, PictureBox lightestColour, PictureBox borderColourPreview, PictureBox alternativeNormalTextColourPreview, PictureBox normalTextColourPreview, PictureBox disabledTextColourPreview, PictureBox focusedTextColourPreview, PictureBox pressedTextColourPreview, PictureBox disabledColourPreview, PictureBox linkNormalColourPreview, PictureBox linkFocusedColourPreview, PictureBox linkHoverColourPreview, PictureBox linkVisitedColourPreview, PictureBox customColourOne, PictureBox customColourTwo, PictureBox customColourThree, PictureBox customColourFour, PictureBox customColourFive, PictureBox customTextColourOne, PictureBox customTextColourTwo, PictureBox customTextColourThree, PictureBox customTextColourFour, PictureBox customTextColourFive, PictureBox menuTextColour, PictureBox statusTextColour, PictureBox ribbonTabTextColour, ToolStripLabel statusState, bool invertColours = false)
+        public static void ExportPaletteTheme(KryptonPalette palette, PaletteMode paletteMode, PictureBox baseColour, PictureBox darkColour, PictureBox mediumColour, PictureBox lightColour, PictureBox lightestColour, PictureBox borderColourPreview, PictureBox alternativeNormalTextColourPreview, PictureBox normalTextColourPreview, PictureBox disabledTextColourPreview, PictureBox focusedTextColourPreview, PictureBox pressedTextColourPreview, PictureBox disabledColourPreview, PictureBox linkNormalColourPreview, PictureBox linkFocusedColourPreview, PictureBox linkHoverColourPreview, PictureBox linkVisitedColourPreview, PictureBox customColourOne, PictureBox customColourTwo, PictureBox customColourThree, PictureBox customColourFour, PictureBox customColourFive, PictureBox customTextColourOne, PictureBox customTextColourTwo, PictureBox customTextColourThree, PictureBox customTextColourFour, PictureBox customTextColourFive, PictureBox menuTextColour, PictureBox statusTextColour, PictureBox ribbonTabTextColour, ToolStripLabel statusState, bool invertColours = false)
         {
             palette = new KryptonPalette();
 
@@ -70,7 +70,7 @@ namespace ThemeDesigner.Classes
 
                 palette.ButtonStyles.ButtonCluster.StateCommon.Back.ColorStyle = PaletteColorStyle.GlassNormalFull;
 
-                palette.ButtonStyles.ButtonCluster.StateNormal.Back.Color1 = middleColour.BackColor;
+                palette.ButtonStyles.ButtonCluster.StateNormal.Back.Color1 = mediumColour.BackColor;
 
                 palette.ButtonStyles.ButtonCluster.StatePressed.Back.Color1 = baseColour.BackColor;
 
@@ -172,7 +172,7 @@ namespace ThemeDesigner.Classes
 
                 palette.ButtonStyles.ButtonCluster.StateCommon.Back.ColorStyle = PaletteColorStyle.GlassNormalFull;
 
-                palette.ButtonStyles.ButtonCluster.StateNormal.Back.Color1 = middleColour.BackColor;
+                palette.ButtonStyles.ButtonCluster.StateNormal.Back.Color1 = mediumColour.BackColor;
 
                 palette.ButtonStyles.ButtonCluster.StatePressed.Back.Color1 = darkColour.BackColor;
 
@@ -296,7 +296,7 @@ namespace ThemeDesigner.Classes
 
                 palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color1 = darkColour.BackColor;
 
-                palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color2 = middleColour.BackColor;
+                palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color2 = mediumColour.BackColor;
 
                 palette.GridStyles.GridSheet.StateNormal.HeaderRow.Content.Color1 = darkColour.BackColor;
 
@@ -304,7 +304,7 @@ namespace ThemeDesigner.Classes
                 #endregion
 
                 #region Header Styles
-                palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color1 = middleColour.BackColor;
+                palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color1 = mediumColour.BackColor;
 
                 palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color2 = lightColour.BackColor;
 
@@ -320,7 +320,7 @@ namespace ThemeDesigner.Classes
 
                 palette.HeaderStyles.HeaderCommon.StateDisabled.Content.ShortText.Color2 = baseColour.BackColor;
 
-                palette.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = middleColour.BackColor;
+                palette.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = mediumColour.BackColor;
 
                 palette.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = lightColour.BackColor;
 
@@ -402,7 +402,7 @@ namespace ThemeDesigner.Classes
 
                 palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor1 = baseColour.BackColor;
 
-                palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor2 = middleColour.BackColor;
+                palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor2 = mediumColour.BackColor;
 
                 palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor3 = lightColour.BackColor;
 
@@ -428,47 +428,47 @@ namespace ThemeDesigner.Classes
 
                 palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor1 = baseColour.BackColor;
 
-                palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor2 = middleColour.BackColor;
+                palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor2 = mediumColour.BackColor;
 
                 palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor1 = lightestColour.BackColor; // Or 230, 230, 230
 
-                palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor2 = middleColour.BackColor;
+                palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor2 = mediumColour.BackColor;
 
                 palette.Ribbon.RibbonGroupNormalTitle.StateCommon.TextColor = customTextColourFive.BackColor;
 
                 palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor1 = lightestColour.BackColor;
 
-                palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor2 = middleColour.BackColor;
+                palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor2 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonQATFullbar.BackColor1 = middleColour.BackColor;
+                palette.Ribbon.RibbonQATFullbar.BackColor1 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonQATFullbar.BackColor2 = middleColour.BackColor;
+                palette.Ribbon.RibbonQATFullbar.BackColor2 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonQATFullbar.BackColor3 = middleColour.BackColor;
+                palette.Ribbon.RibbonQATFullbar.BackColor3 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor1 = middleColour.BackColor;
+                palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor1 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor2 = middleColour.BackColor;
+                palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor2 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor3 = middleColour.BackColor;
+                palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor3 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor4 = middleColour.BackColor;
+                palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor4 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonQATOverflow.BackColor1 = middleColour.BackColor;
+                palette.Ribbon.RibbonQATOverflow.BackColor1 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonQATOverflow.BackColor2 = middleColour.BackColor;
+                palette.Ribbon.RibbonQATOverflow.BackColor2 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor1 = middleColour.BackColor;
+                palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor1 = mediumColour.BackColor;
 
                 palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor2 = lightColour.BackColor;
 
                 palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor3 = darkColour.BackColor;
 
-                palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor4 = middleColour.BackColor;
+                palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor4 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonTab.StateCommon.BackColor1 = middleColour.BackColor;
+                palette.Ribbon.RibbonTab.StateCommon.BackColor1 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonTab.StateCommon.BackColor3 = middleColour.BackColor;
+                palette.Ribbon.RibbonTab.StateCommon.BackColor3 = mediumColour.BackColor;
 
                 palette.Ribbon.RibbonTab.StateCommon.BackColor4 = lightColour.BackColor;
 
@@ -476,9 +476,9 @@ namespace ThemeDesigner.Classes
 
                 palette.Ribbon.RibbonTab.StateCommon.TextColor = normalTextColourPreview.BackColor;
 
-                palette.Ribbon.RibbonTab.StateContextCheckedTracking.BackColor2 = middleColour.BackColor;
+                palette.Ribbon.RibbonTab.StateContextCheckedTracking.BackColor2 = mediumColour.BackColor;
 
-                palette.Ribbon.RibbonTab.StateTracking.BackColor2 = middleColour.BackColor;
+                palette.Ribbon.RibbonTab.StateTracking.BackColor2 = mediumColour.BackColor;
 
                 palette.Ribbon.RibbonTab.StateNormal.TextColor = ribbonTabTextColour.BackColor;
                 #endregion
@@ -504,7 +504,7 @@ namespace ThemeDesigner.Classes
 
                 palette.ToolMenuStatus.Button.OverflowButtonGradientEnd = baseColour.BackColor;
 
-                palette.ToolMenuStatus.Button.OverflowButtonGradientMiddle = middleColour.BackColor;
+                palette.ToolMenuStatus.Button.OverflowButtonGradientMiddle = mediumColour.BackColor;
 
                 palette.ToolMenuStatus.Grip.GripDark = baseColour.BackColor;
 
@@ -514,13 +514,13 @@ namespace ThemeDesigner.Classes
 
                 palette.ToolMenuStatus.Menu.ImageMarginGradientEnd = darkColour.BackColor;
 
-                palette.ToolMenuStatus.Menu.ImageMarginGradientMiddle = middleColour.BackColor;
+                palette.ToolMenuStatus.Menu.ImageMarginGradientMiddle = mediumColour.BackColor;
 
                 palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientBegin = baseColour.BackColor;
 
                 palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientEnd = darkColour.BackColor;
 
-                palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientMiddle = middleColour.BackColor;
+                palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientMiddle = mediumColour.BackColor;
 
                 palette.ToolMenuStatus.Menu.MenuBorder = baseColour.BackColor;
 
@@ -530,9 +530,9 @@ namespace ThemeDesigner.Classes
 
                 palette.ToolMenuStatus.Menu.MenuItemPressedGradientEnd = darkColour.BackColor;
 
-                palette.ToolMenuStatus.Menu.MenuItemPressedGradientMiddle = middleColour.BackColor;
+                palette.ToolMenuStatus.Menu.MenuItemPressedGradientMiddle = mediumColour.BackColor;
 
-                palette.ToolMenuStatus.Menu.MenuItemSelected = middleColour.BackColor;
+                palette.ToolMenuStatus.Menu.MenuItemSelected = mediumColour.BackColor;
 
                 palette.ToolMenuStatus.Menu.MenuItemSelectedGradientBegin = darkColour.BackColor;
 
@@ -546,7 +546,7 @@ namespace ThemeDesigner.Classes
 
                 palette.ToolMenuStatus.MenuStrip.MenuStripText = normalTextColourPreview.BackColor;
 
-                palette.ToolMenuStatus.Rafting.RaftingContainerGradientBegin = middleColour.BackColor;
+                palette.ToolMenuStatus.Rafting.RaftingContainerGradientBegin = mediumColour.BackColor;
 
                 palette.ToolMenuStatus.Rafting.RaftingContainerGradientEnd = darkColour.BackColor;
 
@@ -566,13 +566,13 @@ namespace ThemeDesigner.Classes
 
                 palette.ToolMenuStatus.ToolStrip.ToolStripContentPanelGradientEnd = darkColour.BackColor;
 
-                palette.ToolMenuStatus.ToolStrip.ToolStripDropDownBackground = middleColour.BackColor;
+                palette.ToolMenuStatus.ToolStrip.ToolStripDropDownBackground = mediumColour.BackColor;
 
                 palette.ToolMenuStatus.ToolStrip.ToolStripGradientBegin = darkColour.BackColor;
 
                 palette.ToolMenuStatus.ToolStrip.ToolStripGradientEnd = lightColour.BackColor;
 
-                palette.ToolMenuStatus.ToolStrip.ToolStripGradientMiddle = middleColour.BackColor;
+                palette.ToolMenuStatus.ToolStrip.ToolStripGradientMiddle = mediumColour.BackColor;
 
                 palette.ToolMenuStatus.ToolStrip.ToolStripPanelGradientBegin = lightColour.BackColor;
 
@@ -599,7 +599,7 @@ namespace ThemeDesigner.Classes
         /// <param name="paletteMode">The palette mode.</param>
         /// <param name="baseColour">The base colour.</param>
         /// <param name="darkColour">The dark colour.</param>
-        /// <param name="middleColour">The middle colour.</param>
+        /// <param name="mediumColour">The middle colour.</param>
         /// <param name="lightColour">The light colour.</param>
         /// <param name="lightestColour">The lightest colour.</param>
         /// <param name="borderColourPreview">The border colour preview.</param>
@@ -626,7 +626,7 @@ namespace ThemeDesigner.Classes
         /// <param name="statusTextColour">The status text colour.</param>
         /// <param name="statusState">State of the status.</param>
         /// <param name="invertColours">if set to <c>true</c> [invert colours].</param>
-        public static void ExportPaletteTheme(KryptonPalette palette, PaletteMode paletteMode, Color baseColour, Color darkColour, Color middleColour, Color lightColour, Color lightestColour, Color borderColourPreview, Color alternativeNormalTextColourPreview, Color normalTextColourPreview, Color disabledTextColourPreview, Color focusedTextColourPreview, Color pressedTextColourPreview, Color disabledColourPreview, Color linkNormalColourPreview, Color linkFocusedColourPreview, Color linkHoverColourPreview, Color linkVisitedColourPreview, Color customColourOne, Color customColourTwo, Color customColourThree, Color customColourFour, Color customColourFive, Color customTextColourOne, Color customTextColourTwo, Color customTextColourThree, Color customTextColourFour, Color customTextColourFive, Color menuTextColour, Color statusTextColour, Color ribbonTabTextColour, ToolStripLabel statusState, bool invertColours = false)
+        public static void ExportPaletteTheme(KryptonPalette palette, PaletteMode paletteMode, Color baseColour, Color darkColour, Color mediumColour, Color lightColour, Color lightestColour, Color borderColourPreview, Color alternativeNormalTextColourPreview, Color normalTextColourPreview, Color disabledTextColourPreview, Color focusedTextColourPreview, Color pressedTextColourPreview, Color disabledColourPreview, Color linkNormalColourPreview, Color linkFocusedColourPreview, Color linkHoverColourPreview, Color linkVisitedColourPreview, Color customColourOne, Color customColourTwo, Color customColourThree, Color customColourFour, Color customColourFive, Color customTextColourOne, Color customTextColourTwo, Color customTextColourThree, Color customTextColourFour, Color customTextColourFive, Color menuTextColour, Color statusTextColour, Color ribbonTabTextColour, ToolStripLabel statusState, bool invertColours = false)
         {
             try
             {
@@ -647,7 +647,7 @@ namespace ThemeDesigner.Classes
 
                     palette.ButtonStyles.ButtonCluster.StateCommon.Back.ColorStyle = PaletteColorStyle.GlassNormalFull;
 
-                    palette.ButtonStyles.ButtonCluster.StateNormal.Back.Color1 = middleColour;
+                    palette.ButtonStyles.ButtonCluster.StateNormal.Back.Color1 = mediumColour;
 
                     palette.ButtonStyles.ButtonCluster.StatePressed.Back.Color1 = darkColour;
 
@@ -771,7 +771,7 @@ namespace ThemeDesigner.Classes
 
                     palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color1 = darkColour;
 
-                    palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color2 = middleColour;
+                    palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color2 = mediumColour;
 
                     palette.GridStyles.GridSheet.StateNormal.HeaderRow.Content.Color1 = darkColour;
 
@@ -779,7 +779,7 @@ namespace ThemeDesigner.Classes
                     #endregion
 
                     #region Header Styles
-                    palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color1 = middleColour;
+                    palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color1 = mediumColour;
 
                     palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color2 = lightColour;
 
@@ -795,7 +795,7 @@ namespace ThemeDesigner.Classes
 
                     palette.HeaderStyles.HeaderCommon.StateDisabled.Content.ShortText.Color2 = baseColour;
 
-                    palette.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = middleColour;
+                    palette.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = mediumColour;
 
                     palette.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = lightColour;
 
@@ -877,7 +877,7 @@ namespace ThemeDesigner.Classes
 
                     palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor1 = baseColour;
 
-                    palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor2 = middleColour;
+                    palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor2 = mediumColour;
 
                     palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor3 = lightColour;
 
@@ -903,47 +903,47 @@ namespace ThemeDesigner.Classes
 
                     palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor1 = baseColour;
 
-                    palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor2 = middleColour;
+                    palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor2 = mediumColour;
 
                     palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor1 = lightestColour; // Or 230, 230, 230
 
-                    palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor2 = middleColour;
+                    palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor2 = mediumColour;
 
                     palette.Ribbon.RibbonGroupNormalTitle.StateCommon.TextColor = customTextColourFive;
 
                     palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor1 = lightestColour;
 
-                    palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor2 = middleColour;
+                    palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor2 = mediumColour;
 
-                    palette.Ribbon.RibbonQATFullbar.BackColor1 = middleColour;
+                    palette.Ribbon.RibbonQATFullbar.BackColor1 = mediumColour;
 
-                    palette.Ribbon.RibbonQATFullbar.BackColor2 = middleColour;
+                    palette.Ribbon.RibbonQATFullbar.BackColor2 = mediumColour;
 
-                    palette.Ribbon.RibbonQATFullbar.BackColor3 = middleColour;
+                    palette.Ribbon.RibbonQATFullbar.BackColor3 = mediumColour;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor1 = middleColour;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor1 = mediumColour;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor2 = middleColour;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor2 = mediumColour;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor3 = middleColour;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor3 = mediumColour;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor4 = middleColour;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor4 = mediumColour;
 
-                    palette.Ribbon.RibbonQATOverflow.BackColor1 = middleColour;
+                    palette.Ribbon.RibbonQATOverflow.BackColor1 = mediumColour;
 
-                    palette.Ribbon.RibbonQATOverflow.BackColor2 = middleColour;
+                    palette.Ribbon.RibbonQATOverflow.BackColor2 = mediumColour;
 
-                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor1 = middleColour;
+                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor1 = mediumColour;
 
                     palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor2 = lightColour;
 
                     palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor3 = darkColour;
 
-                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor4 = middleColour;
+                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor4 = mediumColour;
 
-                    palette.Ribbon.RibbonTab.StateCommon.BackColor1 = middleColour;
+                    palette.Ribbon.RibbonTab.StateCommon.BackColor1 = mediumColour;
 
-                    palette.Ribbon.RibbonTab.StateCommon.BackColor3 = middleColour;
+                    palette.Ribbon.RibbonTab.StateCommon.BackColor3 = mediumColour;
 
                     palette.Ribbon.RibbonTab.StateCommon.BackColor4 = lightColour;
 
@@ -951,9 +951,9 @@ namespace ThemeDesigner.Classes
 
                     palette.Ribbon.RibbonTab.StateCommon.TextColor = normalTextColourPreview;
 
-                    palette.Ribbon.RibbonTab.StateContextCheckedTracking.BackColor2 = middleColour;
+                    palette.Ribbon.RibbonTab.StateContextCheckedTracking.BackColor2 = mediumColour;
 
-                    palette.Ribbon.RibbonTab.StateTracking.BackColor2 = middleColour;
+                    palette.Ribbon.RibbonTab.StateTracking.BackColor2 = mediumColour;
 
                     palette.Ribbon.RibbonTab.StateNormal.TextColor = ribbonTabTextColour;
                     #endregion
@@ -979,7 +979,7 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.Button.OverflowButtonGradientEnd = baseColour;
 
-                    palette.ToolMenuStatus.Button.OverflowButtonGradientMiddle = middleColour;
+                    palette.ToolMenuStatus.Button.OverflowButtonGradientMiddle = mediumColour;
 
                     palette.ToolMenuStatus.Grip.GripDark = baseColour;
 
@@ -989,13 +989,13 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.Menu.ImageMarginGradientEnd = darkColour;
 
-                    palette.ToolMenuStatus.Menu.ImageMarginGradientMiddle = middleColour;
+                    palette.ToolMenuStatus.Menu.ImageMarginGradientMiddle = mediumColour;
 
                     palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientBegin = baseColour;
 
                     palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientEnd = darkColour;
 
-                    palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientMiddle = middleColour;
+                    palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientMiddle = mediumColour;
 
                     palette.ToolMenuStatus.Menu.MenuBorder = baseColour;
 
@@ -1005,9 +1005,9 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.Menu.MenuItemPressedGradientEnd = darkColour;
 
-                    palette.ToolMenuStatus.Menu.MenuItemPressedGradientMiddle = middleColour;
+                    palette.ToolMenuStatus.Menu.MenuItemPressedGradientMiddle = mediumColour;
 
-                    palette.ToolMenuStatus.Menu.MenuItemSelected = middleColour;
+                    palette.ToolMenuStatus.Menu.MenuItemSelected = mediumColour;
 
                     palette.ToolMenuStatus.Menu.MenuItemSelectedGradientBegin = darkColour;
 
@@ -1021,7 +1021,7 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.MenuStrip.MenuStripText = normalTextColourPreview;
 
-                    palette.ToolMenuStatus.Rafting.RaftingContainerGradientBegin = middleColour;
+                    palette.ToolMenuStatus.Rafting.RaftingContainerGradientBegin = mediumColour;
 
                     palette.ToolMenuStatus.Rafting.RaftingContainerGradientEnd = darkColour;
 
@@ -1041,13 +1041,13 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripContentPanelGradientEnd = darkColour;
 
-                    palette.ToolMenuStatus.ToolStrip.ToolStripDropDownBackground = middleColour;
+                    palette.ToolMenuStatus.ToolStrip.ToolStripDropDownBackground = mediumColour;
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripGradientBegin = darkColour;
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripGradientEnd = lightColour;
 
-                    palette.ToolMenuStatus.ToolStrip.ToolStripGradientMiddle = middleColour;
+                    palette.ToolMenuStatus.ToolStrip.ToolStripGradientMiddle = mediumColour;
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripPanelGradientBegin = lightColour;
 
@@ -1078,7 +1078,7 @@ namespace ThemeDesigner.Classes
         /// <param name="paletteMode">The palette mode.</param>
         /// <param name="baseColour">The base colour.</param>
         /// <param name="darkColour">The dark colour.</param>
-        /// <param name="middleColour">The middle colour.</param>
+        /// <param name="mediumColour">The middle colour.</param>
         /// <param name="lightColour">The light colour.</param>
         /// <param name="lightestColour">The lightest colour.</param>
         /// <param name="borderColourPreview">The border colour preview.</param>
@@ -1107,7 +1107,7 @@ namespace ThemeDesigner.Classes
         /// <param name="ribbonTabTextColour">The ribbon tab text colour.</param>
         /// <param name="statusState">State of the status.</param>
         /// <param name="invertColours">if set to <c>true</c> [invert colours].</param>
-        public static void ExportPalette(PaletteMode paletteMode, PictureBox baseColour, PictureBox darkColour, PictureBox middleColour, PictureBox lightColour, PictureBox lightestColour, PictureBox borderColourPreview, PictureBox alternativeNormalTextColourPreview, PictureBox normalTextColourPreview, PictureBox disabledTextColourPreview, PictureBox focusedTextColourPreview, PictureBox pressedTextColourPreview, PictureBox disabledColourPreview, PictureBox linkNormalColourPreview, PictureBox linkFocusedColourPreview, PictureBox linkHoverColourPreview, PictureBox linkVisitedColourPreview, PictureBox customColourOne, PictureBox customColourTwo, PictureBox customColourThree, PictureBox customColourFour, PictureBox customColourFive, PictureBox customTextColourOne, PictureBox customTextColourTwo, PictureBox customTextColourThree, PictureBox customTextColourFour, PictureBox customTextColourFive, PictureBox menuTextColour, PictureBox statusTextColour, PictureBox ribbonTabTextColour, ToolStripLabel statusState, bool invertColours = false)
+        public static void ExportPalette(PaletteMode paletteMode, PictureBox baseColour, PictureBox darkColour, PictureBox mediumColour, PictureBox lightColour, PictureBox lightestColour, PictureBox borderColourPreview, PictureBox alternativeNormalTextColourPreview, PictureBox normalTextColourPreview, PictureBox disabledTextColourPreview, PictureBox focusedTextColourPreview, PictureBox pressedTextColourPreview, PictureBox disabledColourPreview, PictureBox linkNormalColourPreview, PictureBox linkFocusedColourPreview, PictureBox linkHoverColourPreview, PictureBox linkVisitedColourPreview, PictureBox customColourOne, PictureBox customColourTwo, PictureBox customColourThree, PictureBox customColourFour, PictureBox customColourFive, PictureBox customTextColourOne, PictureBox customTextColourTwo, PictureBox customTextColourThree, PictureBox customTextColourFour, PictureBox customTextColourFive, PictureBox menuTextColour, PictureBox statusTextColour, PictureBox ribbonTabTextColour, ToolStripLabel statusState, bool invertColours = false)
         {
             KryptonPalette palette = new KryptonPalette();
 
@@ -1135,7 +1135,7 @@ namespace ThemeDesigner.Classes
 
                     palette.ButtonStyles.ButtonCluster.StateCommon.Back.ColorStyle = PaletteColorStyle.GlassNormalFull;
 
-                    palette.ButtonStyles.ButtonCluster.StateNormal.Back.Color1 = middleColour.BackColor;
+                    palette.ButtonStyles.ButtonCluster.StateNormal.Back.Color1 = mediumColour.BackColor;
 
                     palette.ButtonStyles.ButtonCluster.StatePressed.Back.Color1 = darkColour.BackColor;
 
@@ -1259,7 +1259,7 @@ namespace ThemeDesigner.Classes
 
                     palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color1 = darkColour.BackColor;
 
-                    palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color2 = middleColour.BackColor;
+                    palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color2 = mediumColour.BackColor;
 
                     palette.GridStyles.GridSheet.StateNormal.HeaderRow.Content.Color1 = darkColour.BackColor;
 
@@ -1267,7 +1267,7 @@ namespace ThemeDesigner.Classes
                     #endregion
 
                     #region Header Styles
-                    palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color1 = middleColour.BackColor;
+                    palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color1 = mediumColour.BackColor;
 
                     palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color2 = lightColour.BackColor;
 
@@ -1283,7 +1283,7 @@ namespace ThemeDesigner.Classes
 
                     palette.HeaderStyles.HeaderCommon.StateDisabled.Content.ShortText.Color2 = baseColour.BackColor;
 
-                    palette.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = middleColour.BackColor;
+                    palette.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = mediumColour.BackColor;
 
                     palette.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = lightColour.BackColor;
 
@@ -1365,7 +1365,7 @@ namespace ThemeDesigner.Classes
 
                     palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor1 = baseColour.BackColor;
 
-                    palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor2 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor3 = lightColour.BackColor;
 
@@ -1391,47 +1391,47 @@ namespace ThemeDesigner.Classes
 
                     palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor1 = baseColour.BackColor;
 
-                    palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor2 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor1 = lightestColour.BackColor; // Or 230, 230, 230
 
-                    palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor2 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonGroupNormalTitle.StateCommon.TextColor = customTextColourFive.BackColor;
 
                     palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor1 = lightestColour.BackColor;
 
-                    palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor2 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATFullbar.BackColor1 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATFullbar.BackColor1 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATFullbar.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATFullbar.BackColor2 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATFullbar.BackColor3 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATFullbar.BackColor3 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor1 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor1 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor2 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor3 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor3 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor4 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor4 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATOverflow.BackColor1 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATOverflow.BackColor1 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATOverflow.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATOverflow.BackColor2 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor1 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor1 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor2 = lightColour.BackColor;
 
                     palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor3 = darkColour.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor4 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor4 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateCommon.BackColor1 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateCommon.BackColor1 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateCommon.BackColor3 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateCommon.BackColor3 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonTab.StateCommon.BackColor4 = lightColour.BackColor;
 
@@ -1439,9 +1439,9 @@ namespace ThemeDesigner.Classes
 
                     palette.Ribbon.RibbonTab.StateCommon.TextColor = normalTextColourPreview.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateContextCheckedTracking.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateContextCheckedTracking.BackColor2 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateTracking.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateTracking.BackColor2 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonTab.StateNormal.TextColor = ribbonTabTextColour.BackColor;
                     #endregion
@@ -1467,7 +1467,7 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.Button.OverflowButtonGradientEnd = baseColour.BackColor;
 
-                    palette.ToolMenuStatus.Button.OverflowButtonGradientMiddle = middleColour.BackColor;
+                    palette.ToolMenuStatus.Button.OverflowButtonGradientMiddle = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.Grip.GripDark = baseColour.BackColor;
 
@@ -1477,13 +1477,13 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.Menu.ImageMarginGradientEnd = darkColour.BackColor;
 
-                    palette.ToolMenuStatus.Menu.ImageMarginGradientMiddle = middleColour.BackColor;
+                    palette.ToolMenuStatus.Menu.ImageMarginGradientMiddle = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientBegin = baseColour.BackColor;
 
                     palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientEnd = darkColour.BackColor;
 
-                    palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientMiddle = middleColour.BackColor;
+                    palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientMiddle = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.Menu.MenuBorder = baseColour.BackColor;
 
@@ -1493,9 +1493,9 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.Menu.MenuItemPressedGradientEnd = darkColour.BackColor;
 
-                    palette.ToolMenuStatus.Menu.MenuItemPressedGradientMiddle = middleColour.BackColor;
+                    palette.ToolMenuStatus.Menu.MenuItemPressedGradientMiddle = mediumColour.BackColor;
 
-                    palette.ToolMenuStatus.Menu.MenuItemSelected = middleColour.BackColor;
+                    palette.ToolMenuStatus.Menu.MenuItemSelected = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.Menu.MenuItemSelectedGradientBegin = darkColour.BackColor;
 
@@ -1509,7 +1509,7 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.MenuStrip.MenuStripText = normalTextColourPreview.BackColor;
 
-                    palette.ToolMenuStatus.Rafting.RaftingContainerGradientBegin = middleColour.BackColor;
+                    palette.ToolMenuStatus.Rafting.RaftingContainerGradientBegin = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.Rafting.RaftingContainerGradientEnd = darkColour.BackColor;
 
@@ -1529,13 +1529,13 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripContentPanelGradientEnd = darkColour.BackColor;
 
-                    palette.ToolMenuStatus.ToolStrip.ToolStripDropDownBackground = middleColour.BackColor;
+                    palette.ToolMenuStatus.ToolStrip.ToolStripDropDownBackground = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripGradientBegin = darkColour.BackColor;
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripGradientEnd = lightColour.BackColor;
 
-                    palette.ToolMenuStatus.ToolStrip.ToolStripGradientMiddle = middleColour.BackColor;
+                    palette.ToolMenuStatus.ToolStrip.ToolStripGradientMiddle = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripPanelGradientBegin = lightColour.BackColor;
 
@@ -1545,13 +1545,13 @@ namespace ThemeDesigner.Classes
                     #endregion
 
                     #region Trackbar
-                    palette.TrackBar.StateCommon.Position.Color4 = middleColour.BackColor;
+                    palette.TrackBar.StateCommon.Position.Color4 = mediumColour.BackColor;
 
                     palette.TrackBar.StateCommon.Position.Color5 = lightColour.BackColor;
 
                     palette.TrackBar.StateCommon.Tick.Color3 = darkColour.BackColor;
 
-                    palette.TrackBar.StateCommon.Tick.Color4 = middleColour.BackColor;
+                    palette.TrackBar.StateCommon.Tick.Color4 = mediumColour.BackColor;
 
                     palette.TrackBar.StateCommon.Tick.Color5 = lightColour.BackColor;
 
@@ -1559,7 +1559,7 @@ namespace ThemeDesigner.Classes
 
                     palette.TrackBar.StateCommon.Track.Color2 = darkColour.BackColor;
 
-                    palette.TrackBar.StateCommon.Track.Color3 = middleColour.BackColor;
+                    palette.TrackBar.StateCommon.Track.Color3 = mediumColour.BackColor;
 
                     palette.TrackBar.StateCommon.Track.Color4 = lightColour.BackColor;
 
@@ -1569,7 +1569,7 @@ namespace ThemeDesigner.Classes
 
                     palette.TrackBar.StateNormal.Track.Color2 = darkColour.BackColor;
 
-                    palette.TrackBar.StateNormal.Track.Color3 = middleColour.BackColor;
+                    palette.TrackBar.StateNormal.Track.Color3 = mediumColour.BackColor;
 
                     palette.TrackBar.StateNormal.Track.Color4 = lightColour.BackColor;
 
@@ -1593,7 +1593,7 @@ namespace ThemeDesigner.Classes
         /// <param name="paletteMode">The palette mode.</param>
         /// <param name="baseColour">The base colour.</param>
         /// <param name="darkColour">The dark colour.</param>
-        /// <param name="middleColour">The middle colour.</param>
+        /// <param name="mediumColour">The middle colour.</param>
         /// <param name="lightColour">The light colour.</param>
         /// <param name="lightestColour">The lightest colour.</param>
         /// <param name="borderColourPreview">The border colour preview.</param>
@@ -1622,7 +1622,7 @@ namespace ThemeDesigner.Classes
         /// <param name="ribbonTabTextColour">The ribbon tab text colour.</param>
         /// <param name="statusState">State of the status.</param>
         /// <param name="invertColours">if set to <c>true</c> [invert colours].</param>
-        public static void ExportPalette(PaletteMode paletteMode, CircularPictureBox baseColour, CircularPictureBox darkColour, CircularPictureBox middleColour, CircularPictureBox lightColour, CircularPictureBox lightestColour, CircularPictureBox borderColourPreview, CircularPictureBox alternativeNormalTextColourPreview, CircularPictureBox normalTextColourPreview, CircularPictureBox disabledTextColourPreview, CircularPictureBox focusedTextColourPreview, CircularPictureBox pressedTextColourPreview, CircularPictureBox disabledColourPreview, CircularPictureBox linkNormalColourPreview, CircularPictureBox linkFocusedColourPreview, CircularPictureBox linkHoverColourPreview, CircularPictureBox linkVisitedColourPreview, CircularPictureBox customColourOne, CircularPictureBox customColourTwo, CircularPictureBox customColourThree, CircularPictureBox customColourFour, CircularPictureBox customColourFive, CircularPictureBox customTextColourOne, CircularPictureBox customTextColourTwo, CircularPictureBox customTextColourThree, CircularPictureBox customTextColourFour, CircularPictureBox customTextColourFive, CircularPictureBox menuTextColour, CircularPictureBox statusTextColour, CircularPictureBox ribbonTabTextColour, ToolStripLabel statusState, bool invertColours = false)
+        public static void ExportPalette(PaletteMode paletteMode, CircularPictureBox baseColour, CircularPictureBox darkColour, CircularPictureBox mediumColour, CircularPictureBox lightColour, CircularPictureBox lightestColour, CircularPictureBox borderColourPreview, CircularPictureBox alternativeNormalTextColourPreview, CircularPictureBox normalTextColourPreview, CircularPictureBox disabledTextColourPreview, CircularPictureBox focusedTextColourPreview, CircularPictureBox pressedTextColourPreview, CircularPictureBox disabledColourPreview, CircularPictureBox linkNormalColourPreview, CircularPictureBox linkFocusedColourPreview, CircularPictureBox linkHoverColourPreview, CircularPictureBox linkVisitedColourPreview, CircularPictureBox customColourOne, CircularPictureBox customColourTwo, CircularPictureBox customColourThree, CircularPictureBox customColourFour, CircularPictureBox customColourFive, CircularPictureBox customTextColourOne, CircularPictureBox customTextColourTwo, CircularPictureBox customTextColourThree, CircularPictureBox customTextColourFour, CircularPictureBox customTextColourFive, CircularPictureBox menuTextColour, CircularPictureBox statusTextColour, CircularPictureBox ribbonTabTextColour, ToolStripLabel statusState, bool invertColours = false)
         {
             KryptonPalette palette = new KryptonPalette();
 
@@ -1650,7 +1650,7 @@ namespace ThemeDesigner.Classes
 
                     palette.ButtonStyles.ButtonCluster.StateCommon.Back.ColorStyle = PaletteColorStyle.GlassNormalFull;
 
-                    palette.ButtonStyles.ButtonCluster.StateNormal.Back.Color1 = middleColour.BackColor;
+                    palette.ButtonStyles.ButtonCluster.StateNormal.Back.Color1 = mediumColour.BackColor;
 
                     palette.ButtonStyles.ButtonCluster.StatePressed.Back.Color1 = darkColour.BackColor;
 
@@ -1774,7 +1774,7 @@ namespace ThemeDesigner.Classes
 
                     palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color1 = darkColour.BackColor;
 
-                    palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color2 = middleColour.BackColor;
+                    palette.GridStyles.GridSheet.StateNormal.HeaderColumn.Content.Color2 = mediumColour.BackColor;
 
                     palette.GridStyles.GridSheet.StateNormal.HeaderRow.Content.Color1 = darkColour.BackColor;
 
@@ -1782,7 +1782,7 @@ namespace ThemeDesigner.Classes
                     #endregion
 
                     #region Header Styles
-                    palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color1 = middleColour.BackColor;
+                    palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color1 = mediumColour.BackColor;
 
                     palette.HeaderStyles.HeaderCommon.StateCommon.Back.Color2 = lightColour.BackColor;
 
@@ -1798,7 +1798,7 @@ namespace ThemeDesigner.Classes
 
                     palette.HeaderStyles.HeaderCommon.StateDisabled.Content.ShortText.Color2 = baseColour.BackColor;
 
-                    palette.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = middleColour.BackColor;
+                    palette.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = mediumColour.BackColor;
 
                     palette.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = lightColour.BackColor;
 
@@ -1880,7 +1880,7 @@ namespace ThemeDesigner.Classes
 
                     palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor1 = baseColour.BackColor;
 
-                    palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor2 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonGroupCollapsedBorder.StateCommon.BackColor3 = lightColour.BackColor;
 
@@ -1906,47 +1906,47 @@ namespace ThemeDesigner.Classes
 
                     palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor1 = baseColour.BackColor;
 
-                    palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonGroupNormalBorder.StateCommon.BackColor2 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor1 = lightestColour.BackColor; // Or 230, 230, 230
 
-                    palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonGroupNormalTitle.StateCommon.BackColor2 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonGroupNormalTitle.StateCommon.TextColor = customTextColourFive.BackColor;
 
                     palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor1 = lightestColour.BackColor;
 
-                    palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonGroupNormalTitle.StateTracking.BackColor2 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATFullbar.BackColor1 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATFullbar.BackColor1 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATFullbar.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATFullbar.BackColor2 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATFullbar.BackColor3 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATFullbar.BackColor3 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor1 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor1 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor2 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor3 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor3 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor4 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATMinibar.StateCommon.BackColor4 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATOverflow.BackColor1 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATOverflow.BackColor1 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonQATOverflow.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonQATOverflow.BackColor2 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor1 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor1 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor2 = lightColour.BackColor;
 
                     palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor3 = darkColour.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor4 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateCheckedTracking.BackColor4 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateCommon.BackColor1 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateCommon.BackColor1 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateCommon.BackColor3 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateCommon.BackColor3 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonTab.StateCommon.BackColor4 = lightColour.BackColor;
 
@@ -1954,9 +1954,9 @@ namespace ThemeDesigner.Classes
 
                     palette.Ribbon.RibbonTab.StateCommon.TextColor = normalTextColourPreview.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateContextCheckedTracking.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateContextCheckedTracking.BackColor2 = mediumColour.BackColor;
 
-                    palette.Ribbon.RibbonTab.StateTracking.BackColor2 = middleColour.BackColor;
+                    palette.Ribbon.RibbonTab.StateTracking.BackColor2 = mediumColour.BackColor;
 
                     palette.Ribbon.RibbonTab.StateNormal.TextColor = ribbonTabTextColour.BackColor;
                     #endregion
@@ -1982,7 +1982,7 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.Button.OverflowButtonGradientEnd = baseColour.BackColor;
 
-                    palette.ToolMenuStatus.Button.OverflowButtonGradientMiddle = middleColour.BackColor;
+                    palette.ToolMenuStatus.Button.OverflowButtonGradientMiddle = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.Grip.GripDark = baseColour.BackColor;
 
@@ -1992,13 +1992,13 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.Menu.ImageMarginGradientEnd = darkColour.BackColor;
 
-                    palette.ToolMenuStatus.Menu.ImageMarginGradientMiddle = middleColour.BackColor;
+                    palette.ToolMenuStatus.Menu.ImageMarginGradientMiddle = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientBegin = baseColour.BackColor;
 
                     palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientEnd = darkColour.BackColor;
 
-                    palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientMiddle = middleColour.BackColor;
+                    palette.ToolMenuStatus.Menu.ImageMarginRevealedGradientMiddle = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.Menu.MenuBorder = baseColour.BackColor;
 
@@ -2008,9 +2008,9 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.Menu.MenuItemPressedGradientEnd = darkColour.BackColor;
 
-                    palette.ToolMenuStatus.Menu.MenuItemPressedGradientMiddle = middleColour.BackColor;
+                    palette.ToolMenuStatus.Menu.MenuItemPressedGradientMiddle = mediumColour.BackColor;
 
-                    palette.ToolMenuStatus.Menu.MenuItemSelected = middleColour.BackColor;
+                    palette.ToolMenuStatus.Menu.MenuItemSelected = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.Menu.MenuItemSelectedGradientBegin = darkColour.BackColor;
 
@@ -2024,7 +2024,7 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.MenuStrip.MenuStripText = normalTextColourPreview.BackColor;
 
-                    palette.ToolMenuStatus.Rafting.RaftingContainerGradientBegin = middleColour.BackColor;
+                    palette.ToolMenuStatus.Rafting.RaftingContainerGradientBegin = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.Rafting.RaftingContainerGradientEnd = darkColour.BackColor;
 
@@ -2044,13 +2044,13 @@ namespace ThemeDesigner.Classes
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripContentPanelGradientEnd = darkColour.BackColor;
 
-                    palette.ToolMenuStatus.ToolStrip.ToolStripDropDownBackground = middleColour.BackColor;
+                    palette.ToolMenuStatus.ToolStrip.ToolStripDropDownBackground = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripGradientBegin = darkColour.BackColor;
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripGradientEnd = lightColour.BackColor;
 
-                    palette.ToolMenuStatus.ToolStrip.ToolStripGradientMiddle = middleColour.BackColor;
+                    palette.ToolMenuStatus.ToolStrip.ToolStripGradientMiddle = mediumColour.BackColor;
 
                     palette.ToolMenuStatus.ToolStrip.ToolStripPanelGradientBegin = lightColour.BackColor;
 
@@ -2060,13 +2060,13 @@ namespace ThemeDesigner.Classes
                     #endregion
 
                     #region Trackbar
-                    palette.TrackBar.StateCommon.Position.Color4 = middleColour.BackColor;
+                    palette.TrackBar.StateCommon.Position.Color4 = mediumColour.BackColor;
 
                     palette.TrackBar.StateCommon.Position.Color5 = lightColour.BackColor;
 
                     palette.TrackBar.StateCommon.Tick.Color3 = darkColour.BackColor;
 
-                    palette.TrackBar.StateCommon.Tick.Color4 = middleColour.BackColor;
+                    palette.TrackBar.StateCommon.Tick.Color4 = mediumColour.BackColor;
 
                     palette.TrackBar.StateCommon.Tick.Color5 = lightColour.BackColor;
 
@@ -2074,7 +2074,7 @@ namespace ThemeDesigner.Classes
 
                     palette.TrackBar.StateCommon.Track.Color2 = darkColour.BackColor;
 
-                    palette.TrackBar.StateCommon.Track.Color3 = middleColour.BackColor;
+                    palette.TrackBar.StateCommon.Track.Color3 = mediumColour.BackColor;
 
                     palette.TrackBar.StateCommon.Track.Color4 = lightColour.BackColor;
 
@@ -2084,7 +2084,7 @@ namespace ThemeDesigner.Classes
 
                     palette.TrackBar.StateNormal.Track.Color2 = darkColour.BackColor;
 
-                    palette.TrackBar.StateNormal.Track.Color3 = middleColour.BackColor;
+                    palette.TrackBar.StateNormal.Track.Color3 = mediumColour.BackColor;
 
                     palette.TrackBar.StateNormal.Track.Color4 = lightColour.BackColor;
 
