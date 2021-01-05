@@ -1,17 +1,16 @@
 ﻿using Krypton.Toolkit;
+using Krypton.Toolkit.Suite.Extended.Core;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace ThemeDesigner.UX
 {
     public class XMLFileViewerWindow : KryptonForm
     {
+        #region Designer Code
         private KryptonPanel kryptonPanel2;
         private KryptonPanel kryptonPanel3;
-        private EasyScintilla.SimpleEditor simpleEditor1;
+        private EasyScintilla.SimpleEditor seEdit;
         private System.Windows.Forms.MenuStrip ms;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
@@ -44,15 +43,25 @@ namespace ThemeDesigner.UX
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.StatusStrip ss;
         private System.Windows.Forms.ToolStripStatusLabel tslExampleText;
+        private System.Windows.Forms.ContextMenuStrip cmsEdit;
+        private System.ComponentModel.IContainer components;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem clearClipboardToolStripMenuItem;
         private KryptonPanel kryptonPanel1;
 
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XMLFileViewerWindow));
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
-            this.simpleEditor1 = new EasyScintilla.SimpleEditor();
             this.ms = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,16 +92,31 @@ namespace ThemeDesigner.UX
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
             this.ss = new System.Windows.Forms.StatusStrip();
             this.tslExampleText = new System.Windows.Forms.ToolStripStatusLabel();
+            this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
+            this.seEdit = new EasyScintilla.SimpleEditor();
+            this.cmsEdit = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.undoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.cutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.selectAllToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.clearClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            this.ms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
+            this.ss.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
-            this.ms.SuspendLayout();
-            this.ss.SuspendLayout();
+            this.cmsEdit.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -103,34 +127,6 @@ namespace ThemeDesigner.UX
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(864, 24);
             this.kryptonPanel1.TabIndex = 0;
-            // 
-            // kryptonPanel2
-            // 
-            this.kryptonPanel2.Controls.Add(this.ss);
-            this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonPanel2.Location = new System.Drawing.Point(0, 651);
-            this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(864, 24);
-            this.kryptonPanel2.TabIndex = 1;
-            // 
-            // kryptonPanel3
-            // 
-            this.kryptonPanel3.Controls.Add(this.simpleEditor1);
-            this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel3.Location = new System.Drawing.Point(0, 24);
-            this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(864, 627);
-            this.kryptonPanel3.TabIndex = 2;
-            // 
-            // simpleEditor1
-            // 
-            this.simpleEditor1.Lexer = ScintillaNET.Lexer.Xml;
-            this.simpleEditor1.Location = new System.Drawing.Point(12, 15);
-            this.simpleEditor1.Name = "simpleEditor1";
-            this.simpleEditor1.Size = new System.Drawing.Size(840, 606);
-            this.simpleEditor1.Styler = null;
-            this.simpleEditor1.TabIndex = 0;
-            this.simpleEditor1.Text = "simpleEditor1";
             // 
             // ms
             // 
@@ -169,7 +165,7 @@ namespace ThemeDesigner.UX
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
@@ -178,13 +174,13 @@ namespace ThemeDesigner.UX
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -192,19 +188,19 @@ namespace ThemeDesigner.UX
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -212,7 +208,7 @@ namespace ThemeDesigner.UX
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // printPreviewToolStripMenuItem
@@ -220,18 +216,18 @@ namespace ThemeDesigner.UX
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -368,6 +364,15 @@ namespace ThemeDesigner.UX
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
+            // kryptonPanel2
+            // 
+            this.kryptonPanel2.Controls.Add(this.ss);
+            this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.kryptonPanel2.Location = new System.Drawing.Point(0, 651);
+            this.kryptonPanel2.Name = "kryptonPanel2";
+            this.kryptonPanel2.Size = new System.Drawing.Size(864, 24);
+            this.kryptonPanel2.TabIndex = 1;
+            // 
             // ss
             // 
             this.ss.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -386,6 +391,99 @@ namespace ThemeDesigner.UX
             this.tslExampleText.Size = new System.Drawing.Size(76, 17);
             this.tslExampleText.Text = "Example Text";
             // 
+            // kryptonPanel3
+            // 
+            this.kryptonPanel3.Controls.Add(this.seEdit);
+            this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel3.Location = new System.Drawing.Point(0, 24);
+            this.kryptonPanel3.Name = "kryptonPanel3";
+            this.kryptonPanel3.Size = new System.Drawing.Size(864, 627);
+            this.kryptonPanel3.TabIndex = 2;
+            // 
+            // seEdit
+            // 
+            this.seEdit.IndentationGuides = ScintillaNET.IndentView.LookBoth;
+            this.seEdit.Lexer = ScintillaNET.Lexer.Xml;
+            this.seEdit.Location = new System.Drawing.Point(12, 15);
+            this.seEdit.Name = "seEdit";
+            this.seEdit.Size = new System.Drawing.Size(840, 606);
+            this.seEdit.Styler = null;
+            this.seEdit.TabIndex = 0;
+            // 
+            // cmsEdit
+            // 
+            this.cmsEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmsEdit.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem1,
+            this.redoToolStripMenuItem1,
+            this.toolStripMenuItem1,
+            this.cutToolStripMenuItem1,
+            this.copyToolStripMenuItem1,
+            this.pasteToolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.selectAllToolStripMenuItem1,
+            this.toolStripMenuItem3,
+            this.clearClipboardToolStripMenuItem});
+            this.cmsEdit.Name = "cmsEdit";
+            this.cmsEdit.Size = new System.Drawing.Size(157, 176);
+            // 
+            // undoToolStripMenuItem1
+            // 
+            this.undoToolStripMenuItem1.Name = "undoToolStripMenuItem1";
+            this.undoToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
+            this.undoToolStripMenuItem1.Text = "&Undo";
+            // 
+            // redoToolStripMenuItem1
+            // 
+            this.redoToolStripMenuItem1.Name = "redoToolStripMenuItem1";
+            this.redoToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
+            this.redoToolStripMenuItem1.Text = "&Redo";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(153, 6);
+            // 
+            // cutToolStripMenuItem1
+            // 
+            this.cutToolStripMenuItem1.Name = "cutToolStripMenuItem1";
+            this.cutToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
+            this.cutToolStripMenuItem1.Text = "Cu&t";
+            // 
+            // copyToolStripMenuItem1
+            // 
+            this.copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
+            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
+            this.copyToolStripMenuItem1.Text = "&Copy";
+            // 
+            // pasteToolStripMenuItem1
+            // 
+            this.pasteToolStripMenuItem1.Name = "pasteToolStripMenuItem1";
+            this.pasteToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
+            this.pasteToolStripMenuItem1.Text = "&Paste";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(153, 6);
+            // 
+            // selectAllToolStripMenuItem1
+            // 
+            this.selectAllToolStripMenuItem1.Name = "selectAllToolStripMenuItem1";
+            this.selectAllToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
+            this.selectAllToolStripMenuItem1.Text = "Select &All";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(153, 6);
+            // 
+            // clearClipboardToolStripMenuItem
+            // 
+            this.clearClipboardToolStripMenuItem.Name = "clearClipboardToolStripMenuItem";
+            this.clearClipboardToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.clearClipboardToolStripMenuItem.Text = "Clear Clip&board";
+            // 
             // XMLFileViewerWindow
             // 
             this.ClientSize = new System.Drawing.Size(864, 675);
@@ -396,17 +494,50 @@ namespace ThemeDesigner.UX
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            this.ms.ResumeLayout(false);
+            this.ms.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
             this.kryptonPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
-            this.kryptonPanel3.ResumeLayout(false);
-            this.ms.ResumeLayout(false);
-            this.ms.PerformLayout();
             this.ss.ResumeLayout(false);
             this.ss.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
+            this.kryptonPanel3.ResumeLayout(false);
+            this.cmsEdit.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
+        #endregion
+
+        #region Variables
+
+        #endregion
+
+        #region Properties
+
+        #endregion
+
+        #region Constructors
+        public XMLFileViewerWindow() => InitializeComponent();
+
+        public XMLFileViewerWindow(string paletteToImport)
+        {
+            InitializeComponent();
+
+            try
+            {
+                if (File.Exists(paletteToImport))
+                {
+                    StreamReader reader = new StreamReader(paletteToImport);
+
+                    seEdit.Text = reader.ReadToEnd();
+                }
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.CaptureException(e);
+            }
+        }
+        #endregion
     }
 }
