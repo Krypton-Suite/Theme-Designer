@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace ThemeDesigner.Classes
 {
-    public static class ColourUtilities
+    internal static class ColourUtilities
     {
         #region Methods
         /// <summary>
