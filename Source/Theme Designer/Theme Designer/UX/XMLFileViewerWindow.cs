@@ -55,7 +55,7 @@ namespace ThemeDesigner.UX
         private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem clearClipboardToolStripMenuItem;
-        private Krypton.Toolkit.Suite.Extended.Tool.Strip.Items.KryptonSlider kryptonSlider1;
+        private Krypton.Toolkit.Suite.Extended.Tool.Strip.Items.KryptonSlider ksZoomFactor;
         private System.Windows.Forms.ToolStripStatusLabel tslZoomLevel;
         private KryptonPanel kryptonPanel1;
 
@@ -110,7 +110,7 @@ namespace ThemeDesigner.UX
             this.selectAllToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.clearClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kryptonSlider1 = new Krypton.Toolkit.Suite.Extended.Tool.Strip.Items.KryptonSlider();
+            this.ksZoomFactor = new Krypton.Toolkit.Suite.Extended.Tool.Strip.Items.KryptonSlider();
             this.tslZoomLevel = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -382,7 +382,7 @@ namespace ThemeDesigner.UX
             this.ss.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ss.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslExampleText,
-            this.kryptonSlider1,
+            this.ksZoomFactor,
             this.tslZoomLevel});
             this.ss.Location = new System.Drawing.Point(0, 1);
             this.ss.Name = "ss";
@@ -394,7 +394,7 @@ namespace ThemeDesigner.UX
             // tslExampleText
             // 
             this.tslExampleText.Name = "tslExampleText";
-            this.tslExampleText.Size = new System.Drawing.Size(678, 18);
+            this.tslExampleText.Size = new System.Drawing.Size(647, 18);
             this.tslExampleText.Spring = true;
             this.tslExampleText.Text = "Example Text";
             this.tslExampleText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -410,6 +410,9 @@ namespace ThemeDesigner.UX
             // 
             // seEdit
             // 
+            this.seEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.seEdit.IndentationGuides = ScintillaNET.IndentView.LookBoth;
             this.seEdit.Lexer = ScintillaNET.Lexer.Xml;
             this.seEdit.Location = new System.Drawing.Point(12, 15);
@@ -492,15 +495,17 @@ namespace ThemeDesigner.UX
             this.clearClipboardToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.clearClipboardToolStripMenuItem.Text = "Clear Clip&board";
             // 
-            // kryptonSlider1
+            // ksZoomFactor
             // 
-            this.kryptonSlider1.BackColor = System.Drawing.Color.Transparent;
-            this.kryptonSlider1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonSlider1.Name = "kryptonSlider1";
-            this.kryptonSlider1.Size = new System.Drawing.Size(140, 21);
-            this.kryptonSlider1.Steps = 2;
-            this.kryptonSlider1.Text = "kryptonSlider1";
-            this.kryptonSlider1.TrackerSize = new System.Drawing.Size(140, 21);
+            this.ksZoomFactor.BackColor = System.Drawing.Color.Transparent;
+            this.ksZoomFactor.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ksZoomFactor.Name = "ksZoomFactor";
+            this.ksZoomFactor.Range = 250;
+            this.ksZoomFactor.Size = new System.Drawing.Size(140, 21);
+            this.ksZoomFactor.Steps = 2;
+            this.ksZoomFactor.Text = "kryptonSlider1";
+            this.ksZoomFactor.TrackerSize = new System.Drawing.Size(140, 21);
+            this.ksZoomFactor.ValueChanged += new Krypton.Toolkit.Suite.Extended.Tool.Strip.Items.KryptonSlider.ValueChangedEventHandler(this.ksZoomFactor_ValueChanged);
             // 
             // tslZoomLevel
             // 
@@ -568,6 +573,13 @@ namespace ThemeDesigner.UX
         private void XMLFileViewerWindow_Load(object sender, EventArgs e)
         {
             tslZoomLevel.Text = $"{ seEdit.Zoom }%";
+        }
+
+        private void ksZoomFactor_ValueChanged(Krypton.Toolkit.Suite.Extended.Common.KryptonToolbarSlider sender, Krypton.Toolkit.Suite.Extended.Common.KryptonToolbarSlider.SliderEventArgs eventArgs)
+        {
+            seEdit.Zoom = ksZoomFactor.Value;
+
+            tslZoomLevel.Text = $"{ ksZoomFactor.Value }%";
         }
     }
 }
